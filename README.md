@@ -1,1 +1,1 @@
-# numerically-controlled-oscillator
+# Numerically-Controlled-Oscillator
