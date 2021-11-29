@@ -34,13 +34,13 @@ Calculations of Max Sample Rate Count values and corresponding frequencies are f
 Table 1: Max Sample Rate Count for Different Frequencies
 Desired Frequency		Max Sample Rate Count	            Switch Selction(2:0)
 0 HZ		            Special Case	                    000
-500Hz		            (1/500) * 100MHz * 1/256 = 781	  001
-1000Hz		          (1/1000) * 100MHz * 1/256 = 391	  010
-1500Hz		          (1/1500) * 100MHz * 1/256 = 260	  011
-2000Hz		          (1/2000) * 100MHz * 1/256 = 195	  100
-2500Hz		          (1/2500) * 100MHz * 1/256 = 156	  101
-3000Hz		          (1/3000) * 100MHz * 1/256 = 130	  110
-3500Hz		          (1/3500) * 100MHz * 1/256 = 112	  111
+500Hz		            (1/500) * 100MHz * 1/256 = 781	    001
+1000Hz		          (1/1000) * 100MHz * 1/256 = 391	    010
+1500Hz		          (1/1500) * 100MHz * 1/256 = 260	    011
+2000Hz		          (1/2000) * 100MHz * 1/256 = 195	    100
+2500Hz		          (1/2500) * 100MHz * 1/256 = 156	    101
+3000Hz		          (1/3000) * 100MHz * 1/256 = 130	    110
+3500Hz		          (1/3500) * 100MHz * 1/256 = 112	    111
 
 The eight different frequencies found in Table 1 are selectable by SW(2:0). 
 
