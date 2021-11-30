@@ -9,4 +9,4 @@ Please access and download Word doc "Theory and Implementation of NCO" for fulle
 To configure the NCO and use it you need the following dependencies:
 * Xilinx Vivado       
 * Xilinx Artix-7 FPGA or compatible board
-* provided files in folder
+* provided files in NCO VHDL code files folder
