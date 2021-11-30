@@ -67,15 +67,12 @@ signal char5 : STD_LOGIC_VECTOR (3 downto 0);
 signal char6 : STD_LOGIC_VECTOR(3 downto 0);
 
 signal sineOut : STD_LOGIC_VECTOR (15 downto 0); 
---signal sineOut_top10 : unsigned (9 downto 0); -- top 10 bits use
 
 --Volume Level Shifter PWM signals
 signal sineOut_MSB : STD_LOGIC_VECTOR (0 downto 0);  
 signal sineOut_MSB_invert : STD_LOGIC_VECTOR (0 downto 0);  
 signal sineOut_btm_bits : STD_LOGIC_VECTOR (14 downto 0); 
---signal sineOut_MSB_invert_plus_btm_bits : STD_LOGIC_VECTOR (15 downto 0); 
 signal sineOut_MSB_invert_plus_btm_bits : unsigned (15 downto 0); 
---signal sineOutVol_adjust :  STD_LOGIC_VECTOR (15 downto 0); 
 signal sineOutVol_adjust :  unsigned (15 downto 0); 
 signal shift_value : integer := 0;  --
 
