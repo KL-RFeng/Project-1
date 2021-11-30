@@ -3,8 +3,8 @@
 The numerically controlled oscillator (NCO) is written in VHDL for the NEXYS A7 FPGA development board which is designed around the Xilinx Artix-7 FPGA.
 
 Dependencies: 
-Xilinx Vivado
-Xilinx Artix-7 FPGA or compatible board
+* Xilinx Vivado       
+* Xilinx Artix-7 FPGA or compatible board
 
 Overview:
 The NCO utilizes the Sine look-up table that is generated from the Xilinx Vivado IP catalog’s DDS compiler. The design uses slider switches on the dev board to set the tone frequency where a different set of switches sets the volume of the sine waveform. 
@@ -15,7 +15,7 @@ To reach a desired frequency, we begin with the equation:
 
 The maximum phase counts is defined by the accumulator component  which is 8-bits (8-bit phase resolution) and the phase increment delay is defined as  T_clock multiplied by the max sample rate count.  Eq (1) becomes
 
-    1/[Output Frequency of Sine Wave] = (2^8)(T_clock∙Max Sample Rate Count)
+1/[Output Frequency of Sine Wave] = (2^8)(T_clock∙Max Sample Rate Count)
 
 and for a 100 MHz clock, we get
 
@@ -31,8 +31,8 @@ Example for 500Hz     Sample Rate Count = (1/500) * 100MHz * 1/256 = 781
 
 Calculations of Max Sample Rate Count values and corresponding frequencies are found in Table 1.
 
-Table 1: Max Sample Rate Count for Different Frequencies
-Desired Frequency		Max Sample Rate Count	            Switch Selction(2:0)
+Table 1: Max Sample Rate Count for Different Frequencies  
+Desired Frequency                                           Max Sample Rate Count	            Switch Selction(2:0)
 0 HZ		            Special Case	                    000
 500Hz		            (1/500) * 100MHz * 1/256 = 781	    001
 1000Hz		          (1/1000) * 100MHz * 1/256 = 391	    010
