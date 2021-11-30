@@ -58,3 +58,5 @@ Therefore, we can see that larger Max Sample Rate Counts results stepping throug
 The output sine wave then feeds the input to the Volume Level Shifter block. Volume level control is accomplished by shifting the output sine value to the right by the inverse of the settings of SW(5:3). In other words, take the binary values representing the instantaneous amplitudes values of the sinewave and perform shift right operations that will reduce/scale those values proportionally. More shifting results in more reduction in the values. Because we are taking the inverse of the settings of SW(5:3), a switch value of ‘111’ will not shift the sine LUT output at all so that is 100% volume. But a switch value of ‘010’ will shift the sine LUT output by a value of 5 bits. A switch value of ‘000’ will shift the sine LUT output by 7 bits to create the lowest volume level.
 
 Finally, the sine shifted value feeds the input to the PWM Generator which is needed in order to convert the digital sine signal into an amplified analog signal capable of driving the mono-audio output of the dev board.
+
+The output can be heard by plugging in a set of headphones to the mono-audio output jack.
